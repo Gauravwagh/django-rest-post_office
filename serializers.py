@@ -1,0 +1,15 @@
+from rest_framework import serializers
+from django.shortcuts import render
+
+from .models import Email
+
+
+
+class EmailSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Email
+
+
+# class OccurrenceSerializers(serializers.ModelSerializer):
+#     class Meta:
+#         model = Occurrence
